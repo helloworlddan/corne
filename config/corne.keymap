@@ -32,13 +32,13 @@
 // | ESC  |  !  |  @  |  #  |  $  |  %  |   |  (  |  )  |  <  |  >  |     |      |
 // | TAB  |  ^  |  &  |  *  |  -  |  +  |   |  [  |  ]  |     |     |  :  |  "   |
 // | CTRL |  ~  |  |  |  \  |  _  |  =  |   |  {  |  }  |  `  |     |  ?  |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI | ALT | SPC |   | ENT | LWR | RSE |
 
                         bindings = <
    &kp ESC   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp LPAR  &kp RPAR &kp LT     &kp GT &trans    &trans
    &kp TAB   &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS    &kp LBKT  &kp RBKT &trans     &trans &kp COLON &kp DQT
    &kp LCTRL &kp TILDE &kp PIPE  &trans    &kp UNDER &kp EQUAL   &kp LBRC  &kp RBRC &kp GRAVE  &trans &kp QMARK &trans
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                   &kp LGUI &kp LALT &kp SPACE   &kp RET &mo 1 &mo 2
    >;
                 };
                 raise_layer {
@@ -47,13 +47,13 @@
 // | ESC  |  1  |  2  |  3  |  4  |  5  |   |     |     |     |     |     |      |
 // | TAB  |  6  |  7  |  8  |  9  |  0  |   | LFT | DWN |  UP | RGT |     |      |
 // | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI | ALT | SPC |   | ENT | LWR | RSE |
 
                         bindings = <
-   &kp ESC   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
-   &bt TAB   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp ESC   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &trans   &trans   &trans &trans    &trans &trans
+   &kp TAB   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LCTRL &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                   &kp LGUI &kp LALT &kp SPACE   &kp RET &mo 1 &mo 2
    >;
                 };
 
