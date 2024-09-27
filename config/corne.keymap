@@ -13,11 +13,11 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// ---------------------------------------------------------------------------------
-// | ESC   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BSPC  |
-// | TAB   |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '    |
-// | CTRL  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | GUI   |
-//                     | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
+// -------------------------------------------------------------------------------
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BSPC |
+// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | GUI  |
+//                    | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
 
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I     &kp O   &kp P    &kp BSPC
@@ -28,14 +28,14 @@
 
                 };
                 lower_layer {
-// ---------------------------------------------------------------------------------
-// |       |  !  |  @  |  #  |  $  |  %  |   |  (  |  )  |  <  |  >  |  ?  |       |
-// |       |  ^  |  &  |  *  |  -  |  +  |   |  [  |  ]  |     |  :  |  ;  |  "    |
-// | CTRL  |  ~  |  |  |  `  |  _  |  =  |   |  {  |  }  |  ,  |  .  |  /  |  \    |
-//                     | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
+// -------------------------------------------------------------------------------
+// |      |  !  |  @  |  #  |  $  |  %  |   |  (  |  )  |  <  |  >  |  ?  |      |
+// |      |  ^  |  &  |  *  |  -  |  +  |   |  [  |  ]  |     |  :  |  ;  |  "   |
+// | CTRL |  ~  |  |  |  `  |  _  |  =  |   |  {  |  }  |  ,  |  .  |  /  |  \   |
+//                    | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
 
                         bindings = <
-   &trans   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp LPAR  &kp RPAR &kp LT    &kp GT    &kp QMARK &trans
+   &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp LPAR  &kp RPAR &kp LT    &kp GT    &kp QMARK &trans
    &trans    &kp CARET &kp AMPS  &kp ASTRK &kp MINUS &kp PLUS    &kp LBKT  &kp RBKT &trans    &kp COLON &kp SEMI  &kp DQT
    &kp LCTRL &kp TILDE &kp PIPE  &kp GRAVE &kp UNDER &kp EQUAL   &kp LBRC  &kp RBRC &kp COMMA &kp DOT   &kp FSLH  &kp BSLH
                    &mo 1 &kp LALT &kp SPACE   &kp RET &kp LSHFT &mo 2
@@ -43,11 +43,11 @@
                 };
                 raise_layer {
 
-// ---------------------------------------------------------------------------------
-// |  F1   | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12   |
-// |       |  1  |  2  |  3  |  4  |  5  |   | LFT | DWN |  UP | RGT |     |       |
-// | CTRL  |  6  |  7  |  8  |  9  |  0  |   |     |     |     |     |     |       |
-//                     | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
+// --------------------------------------------------------------------------------
+// |  F1  | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12  |
+// |      |  1  |  2  |  3  |  4  |  5  |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL |  6  |  7  |  8  |  9  |  0  |   |     |     |     |     |     |      |
+//                    | LWE | ALT | SPC |   | ENT |SHIFT| RSE |
 
                         bindings = <
    &kp F1    &kp F2   &kp F3   &kp F4   &kp F5   &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11   &kp F12
